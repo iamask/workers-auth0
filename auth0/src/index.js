@@ -1,7 +1,7 @@
-const auth0Domain = 'zxcc.eu.auth0.com';
-const clientId = '6lciv0NSq6ziASs1g6gi5GIjBxK5MhAD';
-const clientSecret = 'byz9aCGyUXwbG021QUZl6GEEqIv_T5johnAXezNGC1hwT6Jr-MxGhk2ah8COfXjo';
-const redirectUri = 'https://key.zxc.co.in/callback';
+const auth0Domain = 'cc.eu.auth0.com';
+const clientId = '6lciv0NSq6zgi5GIjBxK5MhAD';
+const clientSecret = 'byz9aCGyUXwbGGhk2ah8COfXjo';
+const redirectUri = 'https://www.fff.co/callback';
 
 export default {
   async fetch(request, env, ctx) {
@@ -12,7 +12,7 @@ export default {
     } else if (url.pathname === '/callback') {
       return handleCallback(request);
     } else if (url.pathname === '/') {
-      return new Response(await fetch('https://r2.zxc.co.in/auth0.html'));
+      return new Response(await fetch('https://www.co.in/auth0.html'));
     }
 
     return new Response('Not Found', { status: 404 });
